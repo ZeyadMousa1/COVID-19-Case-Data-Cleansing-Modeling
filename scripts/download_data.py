@@ -14,7 +14,7 @@ def download_covid_data():
     while current_date <= end_date:
         date_to_try = current_date.strftime('%m-%d-%Y')
         print(date_to_try)
-        url = f"https://github.com/CSSEGISandData/COVID-19/blob/master/csse_covid_19_data/csse_covid_19_daily_reports/{date_to_try}.csv"
+        url = f"https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_daily_reports/{date_to_try}.csv"
         print(f"Trying to download data from: {url}")
 
         try:
